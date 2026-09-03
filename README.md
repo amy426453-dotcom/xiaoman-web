@@ -41,9 +41,9 @@ python3 -m http.server 8000
 
 ## 在线体验
 
-- [Vercel 部署版本](https://xiaoman-memory.vercel.app)
-- [腾讯云部署版本](https://xiaoman-memory.com)
-- [GitHub Pages 部署版本](https://amy426453-dotcom.github.io/xiaoman-web/)
+- 腾讯云（推荐）：<https://xiaoman-memory.com>
+- Vercel：<https://xiaoman-memory.vercel.app>
+- GitHub Pages：<https://amy426453-dotcom.github.io/xiaoman-web/>
 
 ## 目录结构
 
