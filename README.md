@@ -26,15 +26,24 @@ AI 对话、个性化内容生成和 3D 可探索空间不属于当前 MVP，属
 
 ## 本地运行
 
-项目为静态网页，不需要构建工具。可直接用浏览器打开 `web/intro.html` 或 `web/room.html`。
-
-如果浏览器限制本地音频或资源加载，可在项目根目录启动静态服务器：
+项目为静态网页，不需要构建工具。如果电脑上已经有项目文件，可进入项目目录并启动本地服务器：
 
 ```bash
+cd "/Users/carmen/Documents/新"
 python3 -m http.server 8000
 ```
 
-然后访问 <http://localhost:8000/web/room.html>。
+如果电脑上没有项目文件，可在 GitHub 仓库页面点击 **Code → Download ZIP**，下载并解压后进入项目目录，再运行上面的命令。
+
+服务器启动后，访问 <http://localhost:8000/web/intro.html> 进入首页，再点击按钮进入房间；也可以直接访问 <http://localhost:8000/web/room.html>。
+
+为了更完整、稳定地呈现网页中的图片、音频和交互效果，推荐使用本地服务器运行。部分浏览器可能会限制本地资源或音频加载。
+
+## 在线体验
+
+- [Vercel 部署版本](https://xiaoman-memory.vercel.app)
+- [腾讯云部署版本](https://xiaoman-memory.com)
+- [GitHub Pages 部署版本](https://amy426453-dotcom.github.io/xiaoman-web/)
 
 ## 目录结构
 
