@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小满的房间｜搬家前的最后一个夏夜</title>
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/room.css?v=computer-excel-flow-20260825-1">
+  </head>
+  <body>
+    <main class="room-shell" data-focus-region="">
+      <div class="room-scene" aria-label="小满的儿童房">
+        <div class="room-dim" aria-hidden="true"></div>
+
+        <div class="scene-details" aria-hidden="true">
+          <div class="wall-clock">
+            <img src="素材/图片【移除背景】/场景_墙上时钟_无指针_桌面.png" alt="">
+            <span class="clock-hand clock-hand--hour"></span>
+            <span class="clock-hand clock-hand--minute"></span>
+            <span class="clock-pin"></span>
+          </div>
+          <img class="height-marks" src="素材/图片【移除背景】/场景_身高刻度_默认_桌面.PNG" alt="">
+        </div>
+
+        <nav class="progress-tray" aria-label="探索进度">
+          <button class="progress-item is-recommended" type="button" data-region="bag" aria-label="书包，推荐探索">
+            <span class="progress-icon progress-icon--bag" aria-hidden="true"></span>
+            <span class="progress-label">书包</span>
+          </button>
+          <button class="progress-item" type="button" data-region="computer" aria-label="电脑">
+            <span class="progress-icon progress-icon--computer" aria-hidden="true"></span>
+            <span class="progress-label">电脑</span>
+          </button>
+          <button class="progress-item" type="button" data-region="drawer" aria-label="书桌抽屉">
+            <span class="progress-icon progress-icon--drawer" aria-hidden="true"></span>
+            <span class="progress-label">书桌抽屉</span>
+          </button>
+          <button class="progress-item" type="button" data-region="mp3" aria-label="MP3">
+            <span class="progress-icon progress-icon--mp3" aria-hidden="true"></span>
+            <span class="progress-label">MP3</span>
+          </button>
+          <span class="progress-divider" aria-hidden="true"></span>
+          <button class="progress-item is-locked" type="button" data-region="box" aria-label="纸箱，完成前四个区域后解锁">
+            <span class="progress-icon progress-icon--box" aria-hidden="true"></span>
+            <span class="progress-lock" aria-hidden="true">⌑</span>
+            <span class="progress-label">纸箱</span>
+          </button>
+        </nav>
+
+        <p class="room-thought" data-thought>点一点房间里发光的物品，看看小满还没收好什么。</p>
+
+        <div class="interactive-objects" aria-label="房间里的可探索物品">
+          <img class="room-object room-object--bag" data-object="bag" src="素材/图片【移除背景】/书包_旧书包_关闭_桌面.png" alt="书包">
+          <img class="room-object room-object--computer" data-object="computer" src="素材/图片【移除背景】/电脑_旧电脑_关闭_桌面.png" alt="旧电脑">
+          <img class="room-object room-object--mp3" src="素材/图片【移除背景】/MP3_MP3_关闭_桌面.png" alt="MP3 播放器">
+          <img class="room-object room-object--box" data-object="box" src="素材/图片【移除背景】/纸箱_搬家纸箱_封闭_桌面.png" alt="封闭的搬家纸箱">
+        </div>
+
+        <button class="room-hotspot room-hotspot--bag" type="button" data-region="bag" aria-label="探索书包"><span>书包</span></button>
+        <button class="room-hotspot room-hotspot--computer" type="button" data-computer-hotspot data-region="computer" aria-label="查看电脑"><span>电脑</span></button>
+        <button class="room-hotspot room-hotspot--drawer" type="button" data-region="drawer" aria-label="探索书桌抽屉"><span>抽屉</span></button>
+        <button class="room-hotspot room-hotspot--mp3" type="button" data-region="mp3" aria-label="探索 MP3"><span>MP3</span></button>
+        <button class="room-hotspot room-hotspot--box" type="button" data-region="box" aria-label="查看纸箱"><span>纸箱</span></button>
+        <button class="room-hotspot room-hotspot--height" type="button" data-region="height" aria-label="查看身高刻度"></button>
+
+        <div class="room-focus-card" role="dialog" aria-modal="true" aria-labelledby="focus-title" hidden>
+          <p class="focus-kicker">正在查看</p>
+          <h1 id="focus-title">书包</h1>
+          <p data-focus-copy>拉链还开着……先把里面的东西收拾好吧。</p>
+          <div class="module-preview" data-module-preview hidden>
+            <img data-module-image src="" alt="">
+          </div>
+          <div class="computer-module" data-computer-module hidden>
+            <div class="computer-app-tabs" role="tablist" aria-label="电脑里的程序">
+              <button class="computer-app-tab is-active" type="button" data-computer-app="match" role="tab" aria-selected="true">水果连连看</button>
+              <button class="computer-app-tab" type="button" data-computer-app="farm" role="tab" aria-selected="false">小满的农场</button>
+            </div>
+            <section class="computer-app-panel" data-computer-panel="match" aria-label="水果连连看">
+              <p class="computer-app-hint" data-match-status>找出相同的水果。可以使用一次提示。</p>
+              <div class="match-board" data-match-board></div>
+              <p class="computer-app-hint is-memory-note" data-match-memory-note hidden>再玩一局就去写作业。
+你还记得，最后是谁帮你找到了那一对吗？</p>
+              <button class="memory-button memory-button--utility" type="button" data-match-hint>提示一对</button>
+            </section>
+            <section class="computer-app-panel" data-computer-panel="farm" hidden aria-label="小满的农场">
+              <p class="computer-app-hint" data-farm-status>农田里有 6 块土地需要照料。</p>
+              <div class="farm-field" data-farm-field>
+                <img class="farm-field-image" src="素材/图片【移除背景】/电脑_QQ农场_土地底图_6列4行_桌面.png" alt="六列四行的小满农场">
+                <div class="farm-grid" data-farm-grid>
+                  <button class="farm-plot" style="--farm-row: 2; --farm-column: 2" type="button" data-farm-plot="water" data-farm-coordinate="2-2" aria-label="给第二行第二列的幼苗浇水">
+                    <img class="farm-plot-state" data-farm-state-image src="素材/图片【移除背景】/电脑_QQ农场_作物_幼苗_桌面.png" alt="等待浇水的幼苗">
+                    <span class="farm-plot-label"><img src="素材/图片【移除背景】/电脑_QQ农场_水壶_默认_桌面.png" alt="">浇水</span>
+                    <span class="farm-effect" data-farm-effect hidden><img class="farm-tool" src="素材/图片【移除背景】/电脑_QQ农场_水壶_默认_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--flow" src="素材/图片【移除背景】/电脑_QQ农场_水流_效果_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--splash" src="素材/图片【移除背景】/电脑_QQ农场_浇水_水花效果_桌面.png" alt=""></span>
+                  </button>
+                  <button class="farm-plot" style="--farm-row: 4; --farm-column: 5" type="button" data-farm-plot="water" data-farm-coordinate="4-5" aria-label="给第四行第五列的幼苗浇水">
+                    <img class="farm-plot-state" data-farm-state-image src="素材/图片【移除背景】/电脑_QQ农场_作物_幼苗_桌面.png" alt="等待浇水的幼苗">
+                    <span class="farm-plot-label"><img src="素材/图片【移除背景】/电脑_QQ农场_水壶_默认_桌面.png" alt="">浇水</span>
+                    <span class="farm-effect" data-farm-effect hidden><img class="farm-tool" src="素材/图片【移除背景】/电脑_QQ农场_水壶_默认_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--flow" src="素材/图片【移除背景】/电脑_QQ农场_水流_效果_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--splash" src="素材/图片【移除背景】/电脑_QQ农场_浇水_水花效果_桌面.png" alt=""></span>
+                  </button>
+                  <button class="farm-plot" style="--farm-row: 2; --farm-column: 5" type="button" data-farm-plot="weed" data-farm-coordinate="2-5" aria-label="清除第二行第五列的杂草">
+                    <img class="farm-plot-state" data-farm-state-image src="素材/图片【移除背景】/电脑_QQ农场_杂草_默认_桌面.png" alt="需要清除的杂草">
+                    <span class="farm-plot-label"><img src="素材/图片【移除背景】/电脑_QQ农场_镰刀_默认_桌面.png" alt="">除草</span>
+                    <span class="farm-effect" data-farm-effect hidden><img class="farm-tool" src="素材/图片【移除背景】/电脑_QQ农场_镰刀_默认_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--trail" src="素材/图片【移除背景】/电脑_QQ农场_镰刀_挥动残影_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--leaves" src="素材/图片【移除背景】/电脑_QQ农场_除草_叶片效果_桌面.png" alt=""></span>
+                  </button>
+                  <button class="farm-plot" style="--farm-row: 4; --farm-column: 2" type="button" data-farm-plot="weed" data-farm-coordinate="4-2" aria-label="清除第四行第二列的杂草">
+                    <img class="farm-plot-state" data-farm-state-image src="素材/图片【移除背景】/电脑_QQ农场_杂草_默认_桌面.png" alt="需要清除的杂草">
+                    <span class="farm-plot-label"><img src="素材/图片【移除背景】/电脑_QQ农场_镰刀_默认_桌面.png" alt="">除草</span>
+                    <span class="farm-effect" data-farm-effect hidden><img class="farm-tool" src="素材/图片【移除背景】/电脑_QQ农场_镰刀_默认_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--trail" src="素材/图片【移除背景】/电脑_QQ农场_镰刀_挥动残影_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--leaves" src="素材/图片【移除背景】/电脑_QQ农场_除草_叶片效果_桌面.png" alt=""></span>
+                  </button>
+                  <button class="farm-plot" style="--farm-row: 3; --farm-column: 3" type="button" data-farm-plot="harvest" data-farm-coordinate="3-3" aria-label="收获第三行第三列的成熟作物">
+                    <img class="farm-plot-state" data-farm-state-image src="素材/图片【移除背景】/电脑_QQ农场_作物_成熟_桌面.png" alt="可以收获的成熟作物">
+                    <span class="farm-plot-label"><img src="素材/图片【移除背景】/电脑_QQ农场_成熟果子_默认_桌面.png" alt="">收获</span>
+                    <span class="farm-effect" data-farm-effect hidden><img class="farm-tool" src="素材/图片【移除背景】/电脑_QQ农场_成熟果子_默认_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--arc" src="素材/图片【移除背景】/电脑_QQ农场_果子_掉落轨迹_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--stars" src="素材/图片【移除背景】/电脑_QQ农场_收获_星光效果_桌面.png" alt=""></span>
+                  </button>
+                  <button class="farm-plot" style="--farm-row: 3; --farm-column: 4" type="button" data-farm-plot="harvest" data-farm-coordinate="3-4" aria-label="收获第三行第四列的成熟作物">
+                    <img class="farm-plot-state" data-farm-state-image src="素材/图片【移除背景】/电脑_QQ农场_作物_成熟_桌面.png" alt="可以收获的成熟作物">
+                    <span class="farm-plot-label"><img src="素材/图片【移除背景】/电脑_QQ农场_成熟果子_默认_桌面.png" alt="">收获</span>
+                    <span class="farm-effect" data-farm-effect hidden><img class="farm-tool" src="素材/图片【移除背景】/电脑_QQ农场_成熟果子_默认_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--arc" src="素材/图片【移除背景】/电脑_QQ农场_果子_掉落轨迹_桌面.png" alt=""><img class="farm-effect-layer farm-effect-layer--stars" src="素材/图片【移除背景】/电脑_QQ农场_收获_星光效果_桌面.png" alt=""></span>
+                  </button>
+                </div>
+              </div>
+              <p class="farm-message" data-farm-message-copy hidden>你不在的时候，<br>我帮你浇过水了。<br>——你的好友圈圈</p>
+            </section>
+          </div>
+          <div class="mp3-player" data-mp3-player hidden>
+            <audio data-mp3-audio preload="metadata" controls controlslist="nodownload" src="../素材/音频/audio/music/tongnian-licensed.mp3?v=20260827"></audio>
+            <p data-mp3-status>播放《童年》</p>
+          </div>
+          <div class="bag-items" data-bag-items hidden aria-label="书包里的物品">
+            <button class="bag-item" type="button" data-bag-item="red-scarf"><img src="素材/图片【移除背景】/书包_红领巾_叠好_桌面.png" alt="红领巾"><span>红领巾</span></button>
+            <button class="bag-item" type="button" data-bag-item="school-card"><img src="素材/图片【移除背景】/书包_校牌_正面_桌面.png" alt="校牌"><span>校牌</span></button>
+            <button class="bag-item" type="button" data-bag-item="badge"><img src="素材/图片【移除背景】/书包_大队长章_默认_桌面.png" alt="中队长章"><span>中队长章</span></button>
+            <button class="bag-item" type="button" data-bag-item="pencil-case"><img src="素材/图片【移除背景】/书包_喜羊羊铅笔盒_关闭_桌面.png" alt="喜羊羊铅笔盒"><span>铅笔盒</span></button>
+            <button class="bag-item" type="button" data-bag-item="dictionary"><img src="素材/图片【移除背景】/书包_新华字典_关闭_桌面.png" alt="新华字典"><span>新华字典</span></button>
+            <button class="bag-item" type="button" data-bag-item="jump-rope"><img src="素材/图片【移除背景】/书包_跳绳_卷起_桌面.png" alt="跳绳"><span>跳绳</span></button>
+            <button class="bag-item" type="button" data-bag-item="desk-note"><img src="素材/图片【移除背景】/书包_同桌纸条_掉落_桌面.png" alt="同桌纸条"><span>同桌纸条</span></button>
+            <button class="bag-item" type="button" data-bag-item="password-book"><img src="素材/图片【移除背景】/书包_密码本_关闭_桌面.PNG" alt="密码本"><span>密码本</span></button>
+          </div>
+          <div class="drawer-items" data-drawer-items hidden aria-label="抽屉里的老物件">
+            <button class="drawer-item" type="button" data-drawer-item="wrapper"><img src="素材/图片【移除背景】/抽屉_水晶糖纸_默认_桌面.png" alt="水晶糖纸"><span>水晶糖纸</span></button>
+            <button class="drawer-item" type="button" data-drawer-item="fortune-teller"><img src="素材/图片【移除背景】/抽屉_东南西北_折起_桌面.png" alt="东南西北"><span>东南西北</span></button>
+            <button class="drawer-item" type="button" data-drawer-item="bubblegum"><img src="素材/图片【移除背景】/抽屉_比巴卜泡泡糖_默认_桌面.png" alt="比巴卜泡泡糖"><span>比巴卜</span></button>
+            <button class="drawer-item" type="button" data-drawer-item="comic"><img src="素材/图片【移除背景】/抽屉_爆笑校园_封面_桌面.png" alt="爆笑校园"><span>爆笑校园</span></button>
+            <button class="drawer-item" type="button" data-drawer-item="spinning-top"><img src="素材/图片【移除背景】/抽屉_陀螺_默认_桌面.png" alt="陀螺"><span>陀螺</span></button>
+            <button class="drawer-item" type="button" data-drawer-item="marbles"><img src="素材/图片【移除背景】/抽屉_玻璃弹珠_默认_桌面.png" alt="玻璃弹珠"><span>玻璃弹珠</span></button>
+          </div>
+          <div class="box-items" data-box-items hidden aria-label="纸箱里的物品">
+            <button class="box-item" type="button" data-box-item="notice"><img src="素材/图片【移除背景】/纸箱_实验中学报到通知_默认_桌面.png" alt="实验中学报到通知"><span>报到通知</span></button>
+            <button class="box-item" type="button" data-box-item="key"><img src="素材/图片【移除背景】/纸箱_新家钥匙_默认_桌面.png" alt="新家钥匙"><span>新家钥匙</span></button>
+            <button class="box-item" type="button" data-box-item="new-bag"><img src="素材/图片【移除背景】/纸箱_黑色双肩书包_默认_桌面.png" alt="黑色双肩书包"><span>新书包</span></button>
+            <button class="box-item" type="button" data-box-item="uniform"><img src="素材/图片【移除背景】/纸箱_实验中学校服_折叠_桌面.png" alt="折叠的实验中学校服"><span>实验中学校服</span></button>
+            <button class="box-item" type="button" data-box-item="class-photo"><img src="素材/图片【移除背景】/纸箱_全班合照_正面_桌面.png" alt="全班合照"><span>全班合照</span></button>
+          </div>
+          <div class="item-detail box-item-detail" data-box-item-detail hidden>
+            <img data-box-item-detail-image src="" alt="">
+            <h2 data-box-item-detail-title></h2>
+            <p data-box-item-detail-copy></p>
+            <p class="box-item-detail-thought" data-box-item-detail-thought></p>
+          </div>
+          <div class="box-detail-dialog" data-box-detail-dialog hidden role="dialog" aria-modal="true" aria-label="物品详情">
+            <img data-box-dialog-image src="" alt="">
+            <h2 data-box-dialog-title></h2>
+            <p data-box-dialog-copy></p>
+            <p class="box-dialog-thought" data-box-dialog-thought></p>
+            <button class="memory-button memory-button--utility" type="button" data-box-dialog-close>返回纸箱</button>
+          </div>
+          <div class="box-photo-detail item-detail" data-box-photo-detail hidden>
+            <div class="box-photo-stage">
+              <img data-box-photo-image src="素材/图片【移除背景】/纸箱_全班合照_正面_桌面.png" alt="全班合照正面">
+              <span data-box-photo-back-text hidden>不要忘记我，我们是永远的<br>好朋友。</span>
+            </div>
+            <p class="box-photo-caption" data-box-photo-caption></p>
+            <p class="box-photo-thought" data-box-photo-thought></p>
+            <button class="memory-button memory-button--utility" type="button" data-box-photo-flip>翻看背面</button>
+            <button class="memory-button memory-button--utility" type="button" data-box-photo-close>返回纸箱</button>
+          </div>
+          <button class="drawer-photo" type="button" data-drawer-photo hidden aria-label="点击查看露出一角的旧合照">
+            <img src="素材/图片【移除背景】/抽屉_全班合照_一角_桌面.png" alt="露出一角的旧合照">
+            <span>点击查看合照</span>
+          </button>
+          <div class="item-detail" data-note-detail hidden>
+            <p>小满，别忘啦！<br>10月25日，是你上初中以后的第一个生日。<br>说好了一起庆祝哦！<br>——你的同桌</p>
+          </div>
+          <div class="item-detail" data-password-detail hidden>
+            <label for="password-input">输入纸条上那一天的日期（4位数字）</label>
+            <div class="password-row">
+              <input id="password-input" type="text" inputmode="numeric" maxlength="4" autocomplete="off" aria-describedby="password-feedback">
+              <button class="memory-button memory-button--utility" type="button" data-password-submit>打开</button>
+            </div>
+            <p id="password-feedback" data-password-feedback role="status" aria-live="polite"></p>
+          </div>
+          <div class="focus-actions">
+            <button class="memory-button memory-button--primary" type="button" data-focus-complete>查看这里</button>
+            <button class="memory-button memory-button--secondary" type="button" data-focus-close>返回房间</button>
+          </div>
+        </div>
+
+        <div class="computer-preview-card" data-computer-preview-card role="dialog" aria-modal="true" aria-labelledby="computer-preview-title" hidden>
+          <p class="focus-kicker">正在查看</p>
+          <h1 id="computer-preview-title">电脑</h1>
+          <p>屏幕还亮着，先看看这个熟悉的老朋友。</p>
+          <div class="module-preview computer-preview-card__image">
+            <img src="素材/图片【移除背景】/电脑_旧电脑_开机_桌面.png" alt="开机的旧电脑">
+          </div>
+          <div class="focus-actions">
+            <button class="memory-button memory-button--primary" type="button" data-computer-preview-open>打开电脑</button>
+            <button class="memory-button memory-button--secondary" type="button" data-computer-preview-close>返回房间</button>
+          </div>
+        </div>
+
+        <div class="room-tools" aria-label="页面工具">
+          <a class="memory-button memory-button--utility" href="index.html">按钮预览</a>
+          <button class="memory-button memory-button--utility" type="button" data-mute>静音</button>
+          <button class="memory-button memory-button--utility" type="button" data-ending-reopen hidden>结束回忆</button>
+        </div>
+      </div>
+    </main>
+    <script src="room.js?v=computer-excel-flow-20260825-1" defer></script>
+  </body>
+</html>

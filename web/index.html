@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>按钮视觉预览｜搬家前的最后一个夏夜</title>
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+  </head>
+  <body>
+    <main class="demo-shell">
+      <p class="eyebrow">小满的房间 · 交互预览</p>
+      <h1>按钮视觉预览</h1>
+      <p class="intro">手写便签式按钮，先确认视觉和操作反馈，再接入房间页面。</p>
+
+      <section class="button-group" aria-labelledby="primary-title">
+        <h2 id="primary-title">主操作</h2>
+        <div class="button-row">
+          <button class="memory-button memory-button--primary" type="button" data-action="collectPhoto">收好照片</button>
+          <button class="memory-button memory-button--primary" type="button" data-action="putMemory">把这段记忆放进去</button>
+        </div>
+      </section>
+
+      <section class="button-group" aria-labelledby="secondary-title">
+        <h2 id="secondary-title">次操作</h2>
+        <div class="button-row">
+          <button class="memory-button memory-button--secondary" type="button" data-action="skipMemory">这次先不放</button>
+          <button class="memory-button memory-button--secondary" type="button" data-action="returnRoom">回房间看看</button>
+        </div>
+      </section>
+
+      <section class="button-group" aria-labelledby="utility-title">
+        <h2 id="utility-title">工具与状态</h2>
+        <div class="button-row">
+          <button class="memory-button memory-button--utility" type="button" aria-label="关闭" data-action="close">×</button>
+          <button class="memory-button memory-button--utility" type="button" data-action="mute">静音</button>
+          <button class="memory-button memory-button--utility" type="button" data-action="restartSummer">再过一次夏天</button>
+          <button class="memory-button memory-button--primary" type="button" disabled>已完成</button>
+        </div>
+      </section>
+
+      <p id="status" class="status-note" role="status" aria-live="polite">等待操作</p>
+    </main>
+    <script src="app.js" defer></script>
+  </body>
+</html>

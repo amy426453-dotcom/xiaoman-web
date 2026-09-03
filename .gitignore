@@ -1,0 +1,7 @@
+.DS_Store
+.sheet-build/
+.sheet-build2/
+.superpowers/
+MVP-snapshots/*.zip
+*.pyc
+__pycache__/

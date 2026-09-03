@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/MVP-snapshots/MVP-V2.0-optimized-lazyload/room.html"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/MVP-snapshots/MVP-V2.0-optimized-lazyload/:path*"
+    }
+  ]
+}
